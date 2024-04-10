@@ -1,0 +1,14 @@
+h1{
+    color: wheat;
+}
+
+h2{
+    color:green;
+}
+
+.h2{
+    color : purple;
+    font-size : xx-large;
+    font-family : 'silkscreen', sans-serif;
+    font-family : 'silkscreen Expanded', sans-serif;
+}
