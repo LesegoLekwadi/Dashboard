@@ -1,41 +1,105 @@
 <!DOCTYPE html>
 <html lang="en">
-<header>
+<head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio2</title>
-</header>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
 
 <style>
-.navb {
-    overflow: hidden;  
-    width: 100%;
-    height: 50px;
-    top:0px;
-    left:0px;
-    position: fixed;
-    z-index: 2;
-    background-color: lightgray;  
+body {
+  margin: 0;
+  padding: 0;
 }
 
-.logo{
-         display: block;
-         display: inline-block;
-         float: right;
-         width:40px
+
+/* ~~ Top Navigation Bar ~~ */
+
+#navigation-container {
+  width: 1200px;
+  margin: 0 auto;
+  height: 70px;
 }
+
+.navigation-bar {
+  background-color: lightgrey;
+  height: 60px;
+  width: 100%;
+}
+
+#navigation-container img {
+  float: right;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+   
+}
+
+#navigation-container ul {
+  padding: 0px;
+  margin: 0px;
+  text-align: center;
+  display:inline-block;
+}
+
+#navigation-container li {
+  list-style-type: none;
+  padding: 0px;
+  height: 24px;
+  margin-top: 4px;
+  margin-bottom: 4px;
+  display: inline;
+}
+
+#navigation-container li a {
+  color: black;
+  font-size: 16px;
+  font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+  text-decoration: none;
+  line-height: 70px;
+  padding: 5px 15px;
+  opacity: 0.7;
+}
+
+
 
 .sidebar {
   /*height: 100%;*/
   width: 160px; /* width of the sidebar */
   position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-  top:50px;
+  top:60px;
   z-index: 2; /* Stay on top */
   bottom: 0; /* Stay at the top */
   left: 0;
   background-color: #111; /* Black */
   overflow-x: hidden; /* Disable horizontal scroll */
  
+}
+
+.sidebar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  font-size: 20px;
+  color: #818181;
+  display: block;
+}
+
+/* Style links on mouse-over */
+.sidebar a:hover {
+  color: #f1f1f1;
+}
+
+/* Style the main content */
+.main {
+  margin-left: 160px; /* Same as the width of the sidenav */
+  padding: 0px 10px;
+}
+
+/* Add media queries for small screens (when the height of the screen is less than 450px, add a smaller padding and font-size) */
+@media screen and (max-height: 450px) {
+  .sidebar {padding-top: 15px;}
+  .sidebar a {font-size: 18px;}
 }
 
 img{
@@ -54,15 +118,32 @@ p {
 
 </style>
 <body>
+
+    <header>
+      <div class="navigation-bar">
+      
+        <div id="navigation-container">
     
-    <div class="navb">
-       
-       <img class="logo" src="https://img.pikbest.com/origin/09/25/73/25qpIkbEsT5w8.png!f305cw" alt="logo">
-       
-      </div>
+          <img src="https://img.pikbest.com/origin/09/25/73/25qpIkbEsT5w8.png!f305cw" alt="logo">
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Projects</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Services</a></li>
+            <li><a href="#">Get in Touch</a></li>
+    
+          </ul>
+        </div>
+        </div>
+    </header>
+        
 
       <div class="sidebar">
-       
+          <a href="#home"><i class="fa fa-fw fa-home"></i> </a>
+          <a href="#services"><i class="fa fa-fw fa-wrench"></i> </a>
+          <a href="#clients"><i class="fa fa-fw fa-user"></i> </a>
+          <a href="#contact"><i class="fa fa-fw fa-envelope"></i> </a>
+        
       </div>
 
       <div>
@@ -72,14 +153,9 @@ p {
       </div>
 
       <div>
-        <p> Elizabeth II (Elizabeth Alexandra Mary; 21 April 1926 – 8 September 2022) was Queen of the United Kingdom and other Commonwealth realms from 6 February 1952 until her death in 2022.
-             She was queen regnant of 32 sovereign states over the course of her lifetime and remained the monarch of 15 realms by the time of her death. Her reign of over 70 years is the longest of any British monarch, the longest of any female monarch, and the second longest verified reign of any monarch of a sovereign state in history.
+        <p> Elizabeth II (Elizabeth Alexandra Mary; 21 April 1926 – 8 September 2022) was Queen of the United Kingdom and other Commonwealth realms from 6 February 1952 until her death in 2022. She was queen regnant of 32 sovereign states over the course of her lifetime and remained the monarch of 15 realms by the time of her death. Her reign of over 70 years is the longest of any British monarch, the longest of any female monarch, and the second longest verified reign of any monarch of a sovereign state in history.
 
-            Elizabeth was born in Mayfair, London, during the reign of her paternal grandfather, King George V. 
-            She was the first child of the Duke and Duchess of York (later King George VI and Queen Elizabeth The Queen Mother). 
-            Her father acceded to the throne in 1936 upon the abdication of his brother Edward VIII, making the ten-year-old Princess Elizabeth the heir presumptive. She was educated privately at home and began to undertake public duties during the Second World War, serving in the Auxiliary Territorial Service. In November 1947, she married Philip Mountbatten, a former prince of Greece and Denmark, and their marriage lasted 73 years until his death in 2021.
-             They had four children: Charles, Anne, Andrew, and Edward.
-        </p>
+         Elizabeth was born in Mayfair, London, during the reign of her paternal grandfather, King George V. She was the first child of the Duke and Duchess of York (later King George VI and Queen Elizabeth The Queen Mother). Her father acceded to the throne in 1936 upon the abdication of his brother Edward VIII, making the ten-year-old Princess Elizabeth the heir presumptive. She was educated privately at home and began to undertake public duties during the Second World War, serving in the Auxiliary Territorial Service. In November 1947, she married Philip Mountbatten, a former prince of Greece and Denmark, and their marriage lasted 73 years until his death in 2021. They had four children: Charles, Anne, Andrew, and Edward.</p>
       </div>
 </body>
 </html>
